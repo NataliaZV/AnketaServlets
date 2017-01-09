@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <title>Anketa</title>
+    </head>
+<body>
+<p id = "title" >Anketa</p>
+<hr align="left" color=#777c7c size=3 width="310">
+<form action="/questions" method="post">
+
+    <p >Enter your name<br></p>
+    <input type="text" size="20" required><br>
+
+    <p >Enter your surname<br></p>
+    <input type="text" size="20" required><br>
+
+    <p>Enter you age<br></p>
+    <table width="100%" cellspacing="0" cellpadding="5">
+        <tr>
+            <td width="80" valign="top"><input type=radio name=age value=">20"> >20</td>
+            <td width="80" valign="top"><input type=radio name=age value="20-27"> 20-27</td>
+            <td valign="top"><input type=radio name=age value="27-35" checked> 27-35</td>
+        </tr>
+        <tr>
+            <td width="80" valign="top"> <input type=radio name=age value="35-45" > 35-45</td>
+            <td width="80" valign="top"><input type=radio name=age value="45-55"> 45-55</td>
+            <td valign="top"><input type=radio name=age value=">55"> >55</td>
+        </tr>
+        <tr>
+    </table>
+    <p>Where are you from?<br></p>
+    <select name="city" >
+        <option>Vinnytsia</option>
+        <option>Dnipro</option>
+        <option>Donetsk</option>
+        <option>Zhytomyr</option>
+        <option>Zaporizhzhia</option>
+        <option>Ivano-Frankivsk</option>
+        <option>Kyiv</option>
+        <option>Kirovohrad</option>
+        <option>Luhansk</option>
+        <option>Lutsk</option>
+        <option>Lviv</option>
+        <option>Mykolaiv</option>
+        <option>Odesa</option>
+        <option>Poltava</option>
+        <option>Rivne</option>
+        <option>Sevastopol</option>
+        <option>Simferopol</option>
+        <option>Sumy</option>
+        <option>Ternopil</option>
+        <option>Uzhhorod</option>
+        <option>Kharkiv</option>
+        <option>Kherson</option>
+        <option>Khmelnytskyi</option>
+        <option>Cherkasy</option>
+        <option>Chernivtsi</option>
+        <option>Chernihiv</option>
+    </select>
+
+    <p>What programming language do you know?<br></p>
+    <table width="100%" cellspacing="0" cellpadding="5">
+        <tr>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="Java"  checked >Java</td>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="PHP" >PHP</td>
+            <td valign="top"><input name="language" type="checkbox" value="C" >C</td>
+        </tr>
+        <tr>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="Python" >Python</td>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="Ruby">Ruby</td>
+            <td valign="top"><input name="language" type="checkbox" value="Scala">Scala</td>
+        </tr>
+        <tr>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="C#">C#</td>
+            <td width="100" valign="top"><input name="language" type="checkbox" value="JavaScript">JavaScript</td>
+            <td valign="top"><input name="language" type="checkbox" value="Perl">Perl</td>
+        </tr>
+    </table>
+
+    <p>What is your work experience (years)?<br></p>
+
+    <table width="100%" cellspacing="0" cellpadding="5">
+        <tr>
+            <td width="80" valign="top"> <input type="radio" name="experience" value=">1" checked> >1</td>
+            <td width="80" valign="top"><input type="radio" name="experience" value="1-2"> 1-2</td>
+            <td valign="top"><input type="radio" name="experience" value="2-3"> 2-3</td>
+        </tr>
+        <tr>
+            <td width="80" valign="top"><input type="radio" name="experience" value="3-5"> 3-5</td>
+            <td width="80" valign="top"><input type="radio" name="experience" value="5-10"> 5-10</td>
+            <td valign="top"><input type="radio" name="experience" value=">10"> >10</td>
+        </tr>
+    </table>
+
+    <p>What is your English level?<br></p>
+    <table width="100%" cellspacing="0" cellpadding="5">
+        <tr>
+            <td width="170" valign="top"><input type="radio" name="english" value="Pre-intermediate"> Pre-intermediate</td>
+            <td valign="top"><input type="radio" name="english" value="Intermediate" checked> Intermediate</td>
+        </tr>
+        <tr>
+            <td width="170" valign="top"><input type="radio" name="english" value="Upper-intermediate"> Upper-intermediate</td>
+            <td valign="top"><input type="radio" name="english" value="Advanced"> Advanced</td>
+        </tr>
+    </table>
+    <p><input type="submit" value="Send" > <input type="reset"  value="Reset"/></p>
+</form>
+</body>
+</html>
